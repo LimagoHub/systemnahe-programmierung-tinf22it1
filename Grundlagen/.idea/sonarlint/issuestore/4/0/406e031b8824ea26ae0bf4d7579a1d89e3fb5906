@@ -1,4 +1,4 @@
 
-Sc:S1481"unused variable 'z'(”è¼ı8áíã‰í1J$c104784a-d9df-48df-8a59-5ed0211ecb50
-fc:S1854"!Value stored to 'x' is never read(–İ…Èùÿÿÿÿ8úŞ‰í1J$498ee30d-eeb6-4768-b552-c505c240c3b9
-bc:S125 "Remove the commented out code.(ÀÂåÀşÿÿÿÿ8€¶Ğˆí1J$33024df9-f616-4daa-a2bd-127b15eaca98
+šc:S995"[Make the type of this parameter a pointer-to-const. The current type of "array" is "int *".(Àç¢8¡Óİ‹í1J$bf15a1b5-5fcd-4e5c-ad7a-780ccefd1155
+wc:S5350"XMake the type of this variable a pointer-to-const. The current type of "ptr" is "int *".(î“Øäşÿÿÿÿ8Êç‹í1
+]c:S125"Remove the commented out code.(³Úëù8òã‹í1J$001640bc-569b-4e0a-a848-e6d1fb4bd770

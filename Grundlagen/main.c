@@ -1,36 +1,36 @@
 #include <stdio.h>
-#include "fooh.h"
 
-
-
-// Declaration einer modul-globalen Variablen
-/* private */ static int z;
-
-void foo() {
-    static int x = 0;
-
-    if(x >= 10 ) return;
-    printf("Hallo");
-    x ++;
-    foo();
+void ausgabe(int * array, size_t size) {
+    for (int i = 0; i < size; ++i) {
+        printf("%d\n",array[i]);// feld + i * sizeof(int)
+    }
 }
 
 int main() {
 
-    foo();
-    foo();
+    int feld [] = {10,20,30,40};
 
-    // Declaration einer lokalen Variablen
-    int x;
-    y =100;
+    int * ptr;
 
-    // Intitialisierung
-    x = 0;
+    ptr = feld;
 
-    ausgabe();
+    printf("%d\n", *feld);
+    printf("%d\n", feld[0]);
 
-    //printf("%d", sizeof(long long));
-    //printf("%d", sizeof(long long));
+    printf("%d\n", *ptr);
+    printf("%d\n", ptr[0]);
+
+    printf("%d\n", feld[1]);
+    printf("%d\n", *(feld + 1));
+
+//    for (int i = 0; i < 4; ++i) {
+//       printf("%d\n",feld[i]);// feld + i * sizeof(int)
+//    }
+
+    ausgabe(feld, 4);
+    printf("%d\n", sizeof(feld));
+    printf("%d\n", sizeof(ptr));
+
     return 0;
 }
 

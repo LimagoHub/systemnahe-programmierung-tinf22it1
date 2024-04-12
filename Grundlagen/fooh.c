@@ -10,7 +10,7 @@
 
 
 
-void ausgabe() {
-
-    printf("Hallo Welt: %d\n", y);
-}
+//void ausgabe() {
+//
+//    printf("Hallo Welt: %d\n", y);
+//}
