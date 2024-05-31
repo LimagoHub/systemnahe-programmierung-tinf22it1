@@ -32,7 +32,8 @@ int main(void)
 	DDRD |= (1 << DDD6);
 	// PD6 is now an output
 
-	
+	DDRB |= (1 << DDB3);
+	// PD6 is now an output
 	
 	
 	
@@ -58,7 +59,7 @@ int main(void)
 	
 
 
-	OCR0A = 128;
+	OCR0A = 196;
 	// set PWM for 75% duty cycle
 
 	
@@ -76,7 +77,23 @@ int main(void)
 
 	TCCR0B |= (1 << CS00) | (1 << CS02) ;
 	
+	OCR2A = 196;
+	// set PWM for 75% duty cycle
 
+
+
+	TCCR2A |= (1 << COM0A1);
+	// set none-inverting mode
+
+
+
+
+	TCCR2A |=   (1 << WGM00);
+	// set Phasen Correct PWM Mode
+
+
+
+	TCCR2B |= (1 << CS00) | (1 << CS01)| (1 << CS02) ;
 
 	sei();
 	while (1)
